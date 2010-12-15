@@ -13,8 +13,7 @@
 		$("#sidebar ul li#stock").click(function(){
 			$("#sidebar ul li").css("text-decoration","none");
 			$("#sidebar ul li#stock").css("text-decoration","underline");
-			contentDisp();
-			//$("#main p").html(data);
+
 		});
 		
 		$("#sidebar ul li#production").click(function(){
@@ -33,16 +32,10 @@
 			//$("#main p").html("<b>H</b>!");
 		});
 	});
-	function contentDisp()
-	{
-	$.ajax({
-	url : "stock.html",
-	success : function (data) {
-	$("#main p").html(data);
-	}
-	});
-	}
-	
+	$(function(){
+		  $("#sidebar ul li#stock").click
+		  (function(){$("div#main").load("stock.html");});
+		});	
 </script>
 
 <title>Phaneesh Granite Private Limited</title>
@@ -84,7 +77,6 @@
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
 </div>
 <div id="footer">
-<p>Footer</p>
 </div>
 </div>
 </body>
