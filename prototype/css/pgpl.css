@@ -40,11 +40,11 @@ h1 {
 
 #main {
 	float: left;
-	width: 1000px;
+	width: 1050px;
 	padding: 10px;
 	background: #f1f1f1;
 	margin-top:10px;
-	height: 200px;
+	height: 600px;
 }
 
 h2 {
@@ -67,6 +67,58 @@ h2 {
 #footer p {
 	margin: 0;
 }
+<!--For Accordion -->
+
+#sidebar li a {
+  background:#222;
+  padding:0.5em;
+  display:block;
+  color:#ececec;
+  font-weight:bold;
+  font:0.2em Verdana, Arial, Helvetica, sans-serif;
+  text-decoration:none;
+
+  }
+
+
+ul > li {
+  list-style:none;
+  padding:0;
+  margin:0;
+  }
+  ul > li > a{
+  text-decoration: none;
+  font:0.8em Verdana, Arial, Helvetica, sans-serif;
+  }
+  ul > li > a:hover{
+  font-style: italic;
+  }
+
+#sidebar li ul {
+  margin:0;
+  padding:0;
+  }
+
+#sidebar li ul li {
+  padding:2px;
+  margin:0;
+  border-bottom:1px dashed #ccc;
+  font:0.8em Verdana, Arial, Helvetica, sans-serif; 
+  }
+
+#sidebar li ul li a {
+  padding:5px 0;
+  font:0.8em Verdana, Arial, Helvetica, sans-serif;
+  color:#222;
+  background:none;
+  text-decoration: none;
+
+}
+
+#sidebar li ul li a:hover {
+  color:#C90;
+  }
+
 
 * html #footer {
 	height: 1px;
