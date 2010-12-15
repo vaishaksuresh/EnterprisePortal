@@ -2,26 +2,66 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="pgpl.css"> 
+<link rel="stylesheet" type="text/css" href="css/pgpl.css">
+<link rel="stylesheet" type="text/css" href="css/start/jquery-ui-1.8.7.custom.css">
+<!-- <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
+	rel="stylesheet" type="text/css" />-->
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$("#sidebar").accordion({autoheight:false,active: false, collapsible:true});
+	});
+	$("#one").click(function(){
+		alert("Hello");
+	});
+</script>
+
 <title>Phaneesh Granite Private Limited</title>
 </head>
 <body>
 <div id="wrap">
-<div id="header"><b>Phaneesh Granite</b> private limited </div>
-<div id="nav">
-Wecome, Vaishak Suresh
-</div>
+<div id="header"><b>Phaneesh Granite</b> private limited</div>
+<div id="nav">Welcome, Vaishak Suresh</div>
 <div id="sidebar">
-<h2>Column 1</h2>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+<h3><a href="#">PPP</a></h3>
+<div>
+<p id="one">One</p>
+</div>
+<h3><a href="#">Fleet</a></h3>
+<div>
+<p>Two</p>
+</div>
+<h3><a href="#">Diesel</a></h3>
+<div>
+<p>Three</p>
+</div>
+<h3><a href="#">HRM</a></h3>
+<div>
+<p>One</p>
+<p>Two</p>
+</div>
+<h3><a href="#">Analytics</a></h3>
+<div>
+<p>One</p>
+<p>Two</p>
+</div>
+<h3><a href="#">Settings</a></h3>
+<div>
+<p>One</p>
+<p>Two</p>
+</div>
 </div>
 <div id="main">
 <h2>Column 2</h2>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
 <ul>
-<li><a href="#">Link 1</a></li>
-<li><a href="#">Link 2</a></li>
-...
+	<li><a href="#">Link 1</a></li>
+	<li><a href="#">Link 2</a></li>
+	...
 </ul>
 </div>
 <div id="footer">
