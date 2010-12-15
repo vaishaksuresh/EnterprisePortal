@@ -1,0 +1,125 @@
+body,html {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: #a7a09a;
+}
+
+#wrap {
+	width: 1300px;
+	margin: 0 auto;
+	background: #ffffff;
+}
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#nav li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	padding: 5px 10px;
+	background: #ddd;
+	height: 50px;
+	font: normal normal normal 20.34px/normal helvetica, arial, freesans, clean, sans-serif;
+}
+
+h1 {
+	margin: 0;
+}
+
+#nav {
+	padding: 5px 10px;
+	background: #342D7E;
+}
+
+#main {
+	float: left;
+	width: 1050px;
+	padding: 10px;
+	background: #f1f1f1;
+	margin-top:10px;
+	height: 600px;
+}
+
+h2 {
+	margin: 0 0 1em;
+}
+
+#sidebar {
+	float: left;
+	width: 200px;
+	padding: 10px;
+	background: #ffffff;
+}
+
+#footer {
+	clear: both;
+	padding: 5px 10px;
+	background: #cc9;
+}
+
+#footer p {
+	margin: 0;
+}
+<!--For Accordion -->
+
+#sidebar li a {
+  background:#222;
+  padding:0.5em;
+  display:block;
+  color:#ececec;
+  font-weight:bold;
+  font:0.2em Verdana, Arial, Helvetica, sans-serif;
+  text-decoration:none;
+
+  }
+
+
+ul > li {
+  list-style:none;
+  padding:0;
+  margin:0;
+  }
+  ul > li > a{
+  text-decoration: none;
+  font:0.8em Verdana, Arial, Helvetica, sans-serif;
+  }
+  ul > li > a:hover{
+  font-style: italic;
+  }
+
+#sidebar li ul {
+  margin:0;
+  padding:0;
+  }
+
+#sidebar li ul li {
+  padding:2px;
+  margin:0;
+  border-bottom:1px dashed #ccc;
+  font:0.8em Verdana, Arial, Helvetica, sans-serif; 
+  }
+
+#sidebar li ul li a {
+  padding:5px 0;
+  font:0.8em Verdana, Arial, Helvetica, sans-serif;
+  color:#222;
+  background:none;
+  text-decoration: none;
+
+}
+
+#sidebar li ul li a:hover {
+  color:#C90;
+  }
+
+
+* html #footer {
+	height: 1px;
+}
