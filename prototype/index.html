@@ -34,7 +34,10 @@
 	});
 	$(function(){
 		  $("#sidebar ul li#stock").click
-		  (function(){$("div#main").load("stock.html");});
+		  (function(){
+			  $("div#maincontents").load("stock.html");
+			  $("div#mainheading h2").text("PPP System");
+			});
 		});	
 </script>
 
@@ -42,8 +45,15 @@
 </head>
 <body>
 <div id="wrap">
-<div id="header"><b>Phaneesh Granite</b> private limited</div>
-<div id="nav">Welcome, Vaishak Suresh</div>
+<div id="header"><p><b>Phaneesh Granite</b> private limited</p></div>
+<div id="nav">
+<table width="100%" height="40px">
+<tr>
+<td width="16%" id="username">Welcome Vaishak</td>
+<td width="84%" id="breadcrumb"><a href="#">PPP &gt; Stock</a></td>
+</tr>
+</table>
+</div>
 <div id="sidebar">
 <h3><a href="#">PPP</a></h3>
 <div>
@@ -73,8 +83,8 @@
 </div>
 </div>
 <div id="main">
-<h2>Welcome</h2>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+	<div id="mainheading"><h2>Welcome</h2></div>
+	<div id="maincontents"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p></div>
 </div>
 <div id="footer">
 </div>
