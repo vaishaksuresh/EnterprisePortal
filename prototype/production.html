@@ -1,0 +1,61 @@
+<script>
+	$(function() {
+		$("#datepicker").datepicker();
+	});
+	$(function() {
+		$("button, input:submit, a", ".demo").button();
+		$("button, input:submit, a", ".demo").click(function() {
+			$("div#maincontents").load("productionreport.html");
+			return false;
+		});
+	});
+</script>
+<div id="datefield" style="float: right;">
+<p>Date:<input type="text" id="datepicker"></p>
+</div>
+<div id="production" style="clear: both;" align="center">
+<table id="tbproduction" width="100%">
+	<tr>
+		<td><b>Location</b></td>
+		<td><select>
+			<option value="Masagapura">Masagapura</option>
+			<option value="Alagangi">Alagangi</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td><b>PIT Id</b></td>
+		<td><input type="text" id="pitid"></td>
+	</tr>
+	<tr>
+		<td><b>Dimensions (cms)</b></td>
+		<td>Length&nbsp;&nbsp;&nbsp;Breadth&nbsp;&nbsp;&nbsp;Height<br>
+		<input type="text" id="length" size="2">&nbsp;&nbsp;&nbsp; <input
+			type="text" id="breadth" size="2">&nbsp;&nbsp;&nbsp; <input
+			type="text" id="height" size="2"></td>
+	</tr>
+	<tr>
+		<td><b>Total Volume</b></td>
+		<td><b>1.25 CBM</b></td>
+	</tr>
+	<tr>
+		<td><b>Stone Size Category</b></td>
+		<td><select>
+			<option value="gangsaw">Gangsaw</option>
+			<option value="vertical">Vertical</option>
+			<option value="custom">Custom</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td><b>Description</b></td>
+		<td><textarea rows="4" style="width: 400px;"></textarea></td>
+	</tr>
+</table>
+</div>
+<div id="bottomrow"
+	style="clear: both; float: right; padding-right: 30px;">
+<div class="demo">
+
+<button>Add</button>
+
+</div>
+</div>

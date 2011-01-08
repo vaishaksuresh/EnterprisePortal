@@ -1,0 +1,59 @@
+<link rel="stylesheet" type="text/css" href="css/pgpl.css">
+<script>
+	$(function() {
+		$("#datepicker").datepicker();
+	});
+	$(function() {
+		$("button, input:submit, a", ".demo").button();
+		$("button, input:submit, a", ".demo").click(function() {
+			$("div#maincontents").load("productionreport.html");
+			return false;
+		});
+	});
+</script>
+<div id="productionreport">
+<div id="productionreportheading">
+	<h3>Production Report</h3>
+</div>
+<table id="tbproductionreport">
+	<tr>
+		<td><b>Date of Extraction</b></td>
+		<td><b>12 Sep 2010 12:00</b></td>
+	</tr>
+	<tr>
+		<td><b>Location</b></td>
+		<td><b>Masagapura</b></td>
+	</tr>
+	<tr>
+		<td><b>PIT ID</b></td>
+		<td><b>MML21</b></td>
+	</tr>
+	<tr>
+		<td><b>Dimensions (Cms)</b></td>
+		<td><b>125 - 125 - 125</b></td>
+	</tr>
+	<tr>
+		<td><b>Total Volume</b></td>
+		<td><b>1.25 CBM</b></td>
+	</tr>
+	<tr>
+		<td><b>Stone Size Category</b></td>
+		<td><b>Gangsaw</b></td>
+	</tr>
+	<tr>
+		<td><b>Decription</b></td>
+		<td><b>Sample Description</b></td>
+	</tr>
+
+</table>
+
+</div>
+<div id="bottomrow"
+	style="clear: both; float: right; padding-right: 30px;">
+<div class="demo">
+
+<button>Submit</button>
+<button>Reset</button>
+
+</div>
+</div>
