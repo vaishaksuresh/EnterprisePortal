@@ -3,7 +3,8 @@ body,html {
 	padding: 0;
 	color: #000;
 	background-color: #a7a09a;
-	background-image: url(../images/background.jpg);
+	background-image: url(../images/backgroundgradient.jpg);
+	background-repeat: repeat-x;
 }
 
 #wrap {
