@@ -10,102 +10,133 @@
 
 <script>
 	$(document).ready(function() {
-		$("#sidebar").accordion({autoheight:false,active: false, collapsible:true});
-		$("#sidebar ul li#stock").click(function(){
-			$("#sidebar ul li").css("text-decoration","none");
-			$("#sidebar ul li#stock").css("text-decoration","underline");
+		$("#sidebar").accordion( {
+			autoheight : false,
+			active : false,
+			collapsible : true
 		});
-		$("#sidebar ul li#production").click(function(){
-			$("#sidebar ul li").css("text-decoration","none");
-			$("#sidebar ul li#production").css("text-decoration","underline");
+		$("#sidebar ul li#stock").click(function() {
+			$("#sidebar ul li").css("text-decoration", "none");
+			$("#sidebar ul li#stock").css("text-decoration", "underline");
+			$("#ui-widget content a").css("color", "red");
 		});
-		$("#sidebar ul li#sales").click(function(){
-			$("#sidebar ul li").css("text-decoration","none");
-			$("#sidebar ul li#sales").css("text-decoration","underline");
+		$("#sidebar ul li#production").click(function() {
+			$("#sidebar ul li").css("text-decoration", "none");
+			$("#sidebar ul li#production").css("text-decoration", "underline");
 		});
-		$("#sidebar ul li#report").click(function(){
-			$("#sidebar ul li").css("text-decoration","none");
-			$("#sidebar ul li#report").css("text-decoration","underline");
+		$("#sidebar ul li#sales").click(function() {
+			$("#sidebar ul li").css("text-decoration", "none");
+			$("#sidebar ul li#sales").css("text-decoration", "underline");
+		});
+		$("#sidebar ul li#report").click(function() {
+			$("#sidebar ul li").css("text-decoration", "none");
+			$("#sidebar ul li#report").css("text-decoration", "underline");
 		});
 	});
-	$(function(){
-		  $("#sidebar ul li#stock").click
-		  (function(){
-			  $("div#maincontents").load("stock.html");
-			  $("div#mainheading h2").text("PPP System");
-			});
-		});
-	$(function(){
-		  $("#sidebar ul li#production").click
-		  (function(){
-			  $("div#maincontents").load("production.html");
-			  $("div#mainheading h2").text("PPP System");
-			});
-		});
-	$(function(){
-		  $("#sidebar ul li#report").click
-		  (function(){
-			  $("div#maincontents").load("reports.html");
-			  $("div#mainheading h2").text("PPP System");
-			});
-		});
 	$(function() {
-		$( "#datepicker" ).datepicker();
-	});	
+		$("#sidebar ul li#stock").click(function() {
+			$("div#maincontents").load("stock.html");
+			$("div#mainheading h2").text("PPP System");
+		});
+	});
+	$(function() {
+		$("#sidebar ul li#production").click(function() {
+			$("div#maincontents").load("production.html");
+			$("div#mainheading h2").text("PPP System");
+		});
+	});
+	$(function() {
+		$("#sidebar ul li#report").click(function() {
+			$("div#maincontents").load("reports.html");
+			$("div#mainheading h2").text("PPP System");
+		});
+	});
+	$(function() {
+		$("#datepicker").datepicker();
+	});
 </script>
+<style type="text/css">
+.leftgradient {
+	background-image: url('images/background.jpg');
+	background-position: right;
+}
+
+.rightgradient {
+	background-image: url('images/backgroundflipped.jpg');
+	background-position: left;
+}
+</style>
 
 <title>PHANEESH GRANITE Private Limited</title>
 </head>
 <body>
-<div id="wrap">
-<div id="header">
-<div id="topline"></div>
-<div id="logout">
-<u>Logout</u></div>
-<div id="companyname">
-<div style="float: right;">ERP</div>
-<p><b>PHANEESH GRANITE</b> private limited</p>
-
-</div>
-</div>
-<div id="nav">
-<table width="100%" height="40px">
+<table border="1" align="center">
 	<tr>
-		<td width="17%" id="username">Welcome Vaishak</td>
-		<td width="83%" id="breadcrumb"><a href="#">PPP &gt; Stock</a></td>
+		<!-- <td id="leftgradient" background="images/backgroundright.jpg" width="20%" >vaishak</td> -->
+		<td class="leftgradient" width="20%">&nbsp;</td>
+		<td width="60%">
+		<div id="wrap">
+		<div id="header">
+		<div id="topline"></div>
+		<div id="logout"><u>Logout</u></div>
+		<div id="companyname">
+		<!-- <div style="float: right;">ERP System</div> -->
+		<div style="float: left;">
+		<p><img src="images/logo.png" width="100px" height="30px"><b>Phaneesh
+		Granite Private Limited</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;ERP
+		System</p>
+		</div>
+		</div>
+		</div>
+		<div id="nav">
+		<table width="100%" height="40px">
+			<tr>
+				<td width="17%" id="username">Welcome Vaishak</td>
+				<td width="83%" id="breadcrumb">PPP &gt; Stock</td>
+			</tr>
+		</table>
+		</div>
+		<div id="sidebar">
+		<h3><a href="#">PPP</a></h3>
+		<div>
+		<ul>
+			<li id="stock"><a href="#">Stock</a></li>
+			<li id="production"><a href="#">Production</a></li>
+			<li id="sales"><a href="#">Sales</a></li>
+			<li id="report"><a href="#">Report</a></li>
+		</ul>
+		</div>
+		<h3><a href="#">Fleet</a></h3>
+		<div></div>
+		<h3><a href="#">Diesel</a></h3>
+		<div></div>
+		<h3><a href="#">Inventory</a></h3>
+		<div></div>
+		<h3><a href="#">HRM</a></h3>
+		<div></div>
+		<h3><a href="#">Analytics</a></h3>
+		<div></div>
+		<h3><a href="#">Settings</a></h3>
+		<div></div>
+		</div>
+		<div id="main">
+		<div id="mainheading">
+		<h3>Welcome</h3>
+		</div>
+		<div id="maincontents">
+		<p>&nbsp;</p>
+		</div>
+		</div>
+		<div id="footer"></div>
+		</div>
+		</td>
+		<td class="rightgradient" width="20%">&nbsp;</td>
 	</tr>
 </table>
-</div>
-<div id="sidebar">
-<h3><a href="#">PPP</a></h3>
-<div>
-<ul>
-	<li id="stock"><a href="#">Stock</a></li>
-	<li id="production"><a href="#">Production</a></li>
-	<li id="sales"><a href="#">Sales</a></li>
-	<li id="report"><a href="#">Report</a></li>
-</ul>
-</div>
-<h3><a href="#">Fleet</a></h3>
-<div></div>
-<h3><a href="#">Diesel</a></h3>
-<div></div>
-<h3><a href="#">HRM</a></h3>
-<div></div>
-<h3><a href="#">Analytics</a></h3>
-<div></div>
-<h3><a href="#">Settings</a></h3>
-<div></div>
-</div>
-<div id="main">
-<div id="mainheading">
-<h2>Welcome</h2>
-</div>
-<div id="maincontents">
-<p>&nbsp;</p>
-</div>
-</div>
-<div id="footer"></div>
-</div>
 </body>
 </html>
