@@ -3,6 +3,8 @@ body,html {
 	padding: 0;
 	color: #000;
 	background-color: #a7a09a;
+	height: 100%;
+	width: 100%;
 }
 
 #wrap {

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="css/pgpl.css">
+<link rel="stylesheet" type="text/css" href="css/pgpl1.css">
 <link rel="stylesheet" type="text/css"
 	href="css/start/jquery-ui-1.8.7.custom.css">
 <script src="jquery/jquery.min.js"></script>
@@ -36,23 +36,31 @@
 	$(function() {
 		$("#sidebar ul li#stock").click(function() {
 			$("div#maincontents").load("stock.html");
-			$("div#mainheading h2").text("PPP System");
+			$("div#mainheading h3").text("PPP SYSTEM");
+			$("div#nav tr td#breadcrumb").text("PPP > Stock");
 		});
 	});
 	$(function() {
 		$("#sidebar ul li#production").click(function() {
 			$("div#maincontents").load("production.html");
-			$("div#mainheading h2").text("PPP System");
+			$("div#mainheading h3").text("PPP SYSTEM");
+			$("div#nav tr td#breadcrumb").text("PPP > Production");
 		});
 	});
 	$(function() {
 		$("#sidebar ul li#report").click(function() {
 			$("div#maincontents").load("reports.html");
-			$("div#mainheading h2").text("PPP System");
+			$("div#mainheading h3").text("PPP SYSTEM");
+			$("div#nav tr td#breadcrumb").text("PPP > Reports");
 		});
 	});
 	$(function() {
 		$("#datepicker").datepicker();
+	});
+	$(function() {
+		$("#sidebar h3 a#ppp").click(function() {
+			$("#sidebar ul li#stock").click();
+		});
 	});
 </script>
 <style type="text/css">
@@ -70,26 +78,22 @@
 <title>PHANEESH GRANITE Private Limited</title>
 </head>
 <body>
-<table border="1" align="center">
+<table align="center" height="100%" width="100%">
 	<tr>
 		<!-- <td id="leftgradient" background="images/backgroundright.jpg" width="20%" >vaishak</td> -->
-		<td class="leftgradient" width="20%">&nbsp;</td>
-		<td width="60%">
-		<div id="wrap">
+		<td class="leftgradient" width="10%" height="100%">&nbsp;</td>
+		<td width="80%">
 		<div id="header">
 		<div id="topline"></div>
 		<div id="logout"><u>Logout</u></div>
-		<div id="companyname">
-		<!-- <div style="float: right;">ERP System</div> -->
+		<div id="companyname"><!-- <div style="float: right;">ERP System</div> -->
 		<div style="float: left;">
 		<p><img src="images/logo.png" width="100px" height="30px"><b>Phaneesh
 		Granite Private Limited</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;ERP
-		System</p>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERP System</p>
 		</div>
 		</div>
 		</div>
@@ -97,45 +101,50 @@
 		<table width="100%" height="40px">
 			<tr>
 				<td width="17%" id="username">Welcome Vaishak</td>
-				<td width="83%" id="breadcrumb">PPP &gt; Stock</td>
+				<td width="83%" id="breadcrumb">Home</td>
 			</tr>
 		</table>
 		</div>
-		<div id="sidebar">
-		<h3><a href="#">PPP</a></h3>
-		<div>
-		<ul>
-			<li id="stock"><a href="#">Stock</a></li>
-			<li id="production"><a href="#">Production</a></li>
-			<li id="sales"><a href="#">Sales</a></li>
-			<li id="report"><a href="#">Report</a></li>
-		</ul>
-		</div>
-		<h3><a href="#">Fleet</a></h3>
-		<div></div>
-		<h3><a href="#">Diesel</a></h3>
-		<div></div>
-		<h3><a href="#">Inventory</a></h3>
-		<div></div>
-		<h3><a href="#">HRM</a></h3>
-		<div></div>
-		<h3><a href="#">Analytics</a></h3>
-		<div></div>
-		<h3><a href="#">Settings</a></h3>
-		<div></div>
-		</div>
-		<div id="main">
-		<div id="mainheading">
-		<h3>Welcome</h3>
-		</div>
-		<div id="maincontents">
-		<p>&nbsp;</p>
-		</div>
+		<div id="content">
+		<table width="100%">
+			<tr>
+				<td id="sidebar">
+				<h3><a id="ppp" href="#">PPP</a></h3>
+				<div>
+				<ul>
+					<li id="stock"><a href="#">Stock</a></li>
+					<li id="production"><a href="#">Production</a></li>
+					<li id="sales"><a href="#">Sales</a></li>
+					<li id="report"><a href="#">Report</a></li>
+				</ul>
+				</div>
+				<h3><a href="#">Fleet</a></h3>
+				<div></div>
+				<h3><a href="#">Diesel</a></h3>
+				<div></div>
+				<h3><a href="#">Inventory</a></h3>
+				<div></div>
+				<h3><a href="#">HRM</a></h3>
+				<div></div>
+				<h3><a href="#">Analytics</a></h3>
+				<div></div>
+				<h3><a href="#">Settings</a></h3>
+				<div></div>
+				</td>
+				<td id="main">
+				<div id="mainheading">
+				<h3>Welcome</h3>
+				</div>
+				<div id="maincontents">
+				<p>&nbsp;</p>
+				</div>
+				</td>
+			</tr>
+		</table>
 		</div>
 		<div id="footer"></div>
-		</div>
 		</td>
-		<td class="rightgradient" width="20%">&nbsp;</td>
+		<td class="rightgradient" width="10%">&nbsp;</td>
 	</tr>
 </table>
 </body>
