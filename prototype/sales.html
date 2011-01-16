@@ -1,0 +1,173 @@
+<script>
+	$(function() {
+		$("#datepicker").datepicker();
+	});
+	$(function() {
+		$("button, input:submit, a", ".demo").button();
+		$("button, input:submit, a", ".demo").click(function() {
+			$("div#maincontents").load("production.html");
+			return false;
+		});
+	});
+</script>
+<div id="datefield" style="float: right;">
+<p>Date: <input type="text" id="datepicker"></p>
+</div>
+<div id="sales" style="clear: both;" align="center">
+<div id="salesheading" style="float: left; clear: both;">
+<h3><u>Pit Details</u></h3>
+
+</div>
+<br>
+<table  id="tbsales" width="100%">
+	<tr>
+		<td width="40%" ><b>Pit ID</b></td>
+		<td width="60%"><select style="width: 160px;">
+			<option value="one">MML21</option>
+			<option value="two">MML22</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td><b>Date Of Extraction</b></td>
+		<td>12 Sep 2010 12:00</td>
+	</tr>
+	<tr>
+		<td><b>Location</b></td>
+		<td>Masagapura</td>
+	</tr>
+	<tr>
+		<td><b>Dimensions (Cms)</b></td>
+		<td>125 - 125 - 125</td>
+	</tr>
+	<tr>
+		<td><b>Total Volume</b></td>
+		<td>1.25 CBM</td>
+	</tr>
+	<tr>
+		<td><b>Stone Category</b></td>
+		<td>Gangsaw</td>
+	</tr>
+</table>
+<hr style="color: blue;">
+<div id="salesheading" style="float: left; clear: both;">
+<h3><u>Price Details</u></h3>
+</div>
+<table   id="tbsales" width="100%">
+	<tr>
+		<td width="40%"><b>Rate per CBM</b></td>
+		<td width="60%">Rs. <input type="text" style="width: 160px;"></td>
+	</tr>
+	<tr>
+		<td><b>Tax</b></td>
+		<td><input type="radio" name="group1" value="vat"> VAT <input
+			type="radio" name="group1" value="cst" checked="checked"> CST
+		<input type="text" value="12" style="width: 60px;">%</td>
+	</tr>
+	<tr>
+		<td><b>Net Price</b></td>
+		<td>Rs. 56,000</td>
+	</tr>
+	<tr>
+		<td><b>Bill Number</b></td>
+		<td><input type="text" style="width: 160px;"></td>
+	</tr>
+</table>
+<hr style="color: blue;">
+<div id="salesheading" style="float: left; clear: both;">
+<h3><u>Customer Details</u></h3>
+
+</div>
+<br>
+<table  id="tbsales" width="100%">
+	<tr>
+		<td width="40%"><b>Customer Name</b></td>
+		<td width="60%"><select style="width: 160px;">
+			<option value="one">Ratan Tata</option>
+		</select> <a href="#">New Customer</a></td>
+	</tr>
+	<tr>
+		<td><b>TIN Number</b></td>
+		<td>ABCD1234</td>
+	</tr>
+	<tr>
+		<td><b>Address</b></td>
+		<td>Bangalore, 9986099860</td>
+	</tr>
+</table>
+<hr style="color: blue;">
+<div id="salesheading" style="float: left; clear: both;">
+<h3><u>After Sales</u></h3>
+
+</div>
+<br>
+<table  id="tbsales" width="100%">
+	<tr>
+		<td width="40%"><b>Permit Number</b></td>
+		<td width="60%" ><input type="text" style="width: 160px;" value="EFG456"></td>
+	</tr>
+	<tr>
+		<td><b>Delivery Note</b></td>
+		<td><input type="text" style="width: 160px;" value="ABC123"></td>
+	</tr>
+	<tr>
+		<td><b>From</b></td>
+		<td><input type="text" style="width: 160px;" value="C H Nagar"></td>
+	</tr>
+	<tr>
+		<td><b>To</b></td>
+		<td><input type="text" style="width: 160px;" value="Bangalore"></td>
+	</tr>
+	<tr>
+		<td><b>Transporter's Name'</b></td>
+		<td><input type="text" style="width: 160px;" value="Rajnikanth"></td>
+	</tr>
+	<tr>
+		<td><b>Vehicle Model</b></td>
+		<td><input type="text" style="width: 160px;" value="TATA 435"></td>
+	</tr>
+	<tr>
+		<td><b>Vehicle Number</b></td>
+		<td><input type="text" style="width: 160px;" value="KA 09 V 69"></td>
+	</tr>
+	<tr>
+		<td><b>Driver's Name'</b></td>
+		<td><input type="text" style="width: 160px;" value="Robert"></td>
+	</tr>
+	<tr>
+		<td><b>Remarks</b></td>
+		<td><textarea rows="4" style="width: 400px;"></textarea></td>
+	</tr>
+</table>
+<hr style="color: blue;">
+<div id="salesheading" style="float: left; clear: both;">
+<h3><u>Payment Details</u></h3>
+
+</div>
+<br>
+<table  id="tbsales" width="100%">
+	<tr>
+		<td width="40%" ><b>Advance Amount</b></td>
+		<td width="60%" >Rs. <input type="text" style="width: 160px;" value="50,000"></td>
+	</tr>
+	<tr>
+		<td><b>Payment Mode</b></td>
+		<td><select style="width: 160px;">
+			<option value="one">RTGS</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td><b>RTGS No</b></td>
+		<td><input type="text" style="width: 160px;" value="ABC123"></td>
+	</tr>
+</table>
+<hr style="color: blue;">
+
+</div>
+<div id="bottomrow"
+	style="clear: both; float: right; padding-right: 30px;">
+<div class="demo">
+
+<button>Add</button>
+
+</div>
+</div>

@@ -184,6 +184,10 @@ ul>li>a:hover {
 	padding-left: 80px;
 	padding-right: 20px;
 }
+#main #sales {
+	padding-left: 80px;
+	padding-right: 20px;
+}
 #main #reports {
 	padding-left: 80px;
 	padding-right: 20px;
@@ -194,18 +198,31 @@ ul>li>a:hover {
 	padding-right: 20px;
 }
 
-#main #tbproduction tr td {
+#tbproduction tr td {
+	text-align: left;
+	padding: 10px;
+}
+#tbsales tr td {
+	text-align: left;
+	padding: 10px;
+}
+#tbsales1 tr td {
 	text-align: left;
 	padding: 10px;
 }
 
-#main #productionreport {
+#productionreport {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+}
+#salesreport {
 	padding-left: 50px;
 	padding-right: 50px;
 	padding-top: 50px;
 }
 
-#main #tbproductionreport {
+#tbproductionreport {
 	width: 100%;
 	height: 100%;
 }
@@ -218,9 +235,8 @@ ul>li>a:hover {
 	height: 25px;
 	padding: 2px;
 }
-#main #tbproductionreport tr td {
+#tbproductionreport tr td {
 	text-align: left;
-	height: 60px;
 	padding: 10px;
 	border: thin;
 }

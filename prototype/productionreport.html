@@ -1,48 +1,61 @@
-<link rel="stylesheet" type="text/css" href="css/pgpl.css">
+<link rel="stylesheet" type="text/css" href="css/pgpl1.css">
 <script>
 	$(function() {
 		$("#datepicker").datepicker();
 	});
 	$(function() {
-		$("button, input:submit, a", ".demo").button();
-		$("button, input:submit, a", ".demo").click(function() {
-			$("div#maincontents").load("productionreport.html");
+		$("button#reset, input:submit, a", ".demo").button();
+		$("button#reset, input:submit, a", ".demo").click(function() {
+			$("div#maincontents").load("production.html");
 			return false;
 		});
 	});
+	$(function() {
+		$("button#submit, input:submit, a", ".demo").button();
+		$("button#submit, input:submit, a", ".demo").click(function() {
+			$("div#maincontents").load("stock.html");
+			return false;
+		});
+	});
+	function openPopUp(){
+		window.open('productionreport.html','popUpWindow','height=600,width=600,left=100,top=100,resizable=no,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no, status=no');
+	}
 </script>
 <div id="productionreport">
 <div id="productionreportheading">
-	<h3>Production Report</h3>
+<h3><img align="right" src="images/printer.jpg"
+	onclick="Javascript:openPopUp();"> <u>Production Details
+Confirmation</u></h3>
+
 </div>
 <table id="tbproductionreport">
 	<tr>
 		<td><b>Date of Extraction</b></td>
-		<td><b>12 Sep 2010 12:00</b></td>
+		<td>12 Sep 2010 12:00</td>
 	</tr>
 	<tr>
 		<td><b>Location</b></td>
-		<td><b>Masagapura</b></td>
+		<td>Masagapura</td>
 	</tr>
 	<tr>
 		<td><b>PIT ID</b></td>
-		<td><b>MML21</b></td>
+		<td>MML21</td>
 	</tr>
 	<tr>
 		<td><b>Dimensions (Cms)</b></td>
-		<td><b>125 - 125 - 125</b></td>
+		<td>125 - 125 - 125</td>
 	</tr>
 	<tr>
 		<td><b>Total Volume</b></td>
-		<td><b>1.25 CBM</b></td>
+		<td>1.25 CBM</td>
 	</tr>
 	<tr>
 		<td><b>Stone Size Category</b></td>
-		<td><b>Gangsaw</b></td>
+		<td>Gangsaw</td>
 	</tr>
 	<tr>
 		<td><b>Decription</b></td>
-		<td><b>Sample Description</b></td>
+		<td>Sample Description</td>
 	</tr>
 
 </table>
@@ -52,8 +65,8 @@
 	style="clear: both; float: right; padding-right: 30px;">
 <div class="demo">
 
-<button>Submit</button>
-<button>Reset</button>
+<button id="submit">Submit</button>
+<button id="reset">Reset</button>
 
 </div>
 </div>
