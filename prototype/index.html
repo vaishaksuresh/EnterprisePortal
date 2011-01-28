@@ -15,22 +15,33 @@
 			active : false,
 			collapsible : true
 		});
-		$("#sidebar ul li#stock").click(function() {
+		$("#sidebar ul li").click(function() {
 			$("#sidebar ul li").css("text-decoration", "none");
-			$("#sidebar ul li#stock").css("text-decoration", "underline");
 			$("#ui-widget content a").css("color", "red");
 		});
+		$("#sidebar ul li#stock").click(function() {
+			$("#sidebar ul li#stock").css("text-decoration", "underline");
+		});
 		$("#sidebar ul li#production").click(function() {
-			$("#sidebar ul li").css("text-decoration", "none");
 			$("#sidebar ul li#production").css("text-decoration", "underline");
 		});
 		$("#sidebar ul li#sales").click(function() {
-			$("#sidebar ul li").css("text-decoration", "none");
 			$("#sidebar ul li#sales").css("text-decoration", "underline");
 		});
 		$("#sidebar ul li#report").click(function() {
-			$("#sidebar ul li").css("text-decoration", "none");
 			$("#sidebar ul li#report").css("text-decoration", "underline");
+		});
+		$("#sidebar ul li#transactions").click(function() {
+			$("#sidebar ul li#transactions").css("text-decoration", "underline");
+		});
+		$("#sidebar ul li#purchase").click(function() {
+			$("#sidebar ul li#purchase").css("text-decoration", "underline");
+		});
+		$("#sidebar ul li#payment").click(function() {
+			$("#sidebar ul li#payment").css("text-decoration", "underline");
+		});
+		$("#sidebar ul li#consumption").click(function() {
+			$("#sidebar ul li#consumption").css("text-decoration", "underline");
 		});
 	});
 	$(function() {
@@ -62,11 +73,37 @@
 		});
 	});
 	$(function() {
+		$("#sidebar ul li#transactions").click(function() {
+			$("div#maincontents").load("transactions.html");
+			$("div#mainheading h3").text("DIESEL");
+			$("div#nav tr td#breadcrumb").text("DIESEL > Transactions");
+		});
+	});
+	$(function() {
+		$("#sidebar ul li#purchase").click(function() {
+			$("div#maincontents").load("purchase.html");
+			$("div#mainheading h3").text("DIESEL");
+			$("div#nav tr td#breadcrumb").text("DIESEL > Purchase");
+		});
+	});
+	$(function() {
+		$("#sidebar ul li#payment").click(function() {
+			$("div#maincontents").load("payment.html");
+			$("div#mainheading h3").text("DIESEL");
+			$("div#nav tr td#breadcrumb").text("DIESEL > Payment");
+		});
+	});
+	$(function() {
 		$("#datepicker").datepicker();
 	});
 	$(function() {
 		$("#sidebar h3 a#ppp").click(function() {
 			$("#sidebar ul li#stock").click();
+		});
+	});
+	$(function() {
+		$("#sidebar h3 a#diesel").click(function() {
+			$("#sidebar ul li#transactions").click();
 		});
 	});
 </script>
@@ -127,8 +164,13 @@
 				</div>
 				<h3><a href="#">Fleet</a></h3>
 				<div></div>
-				<h3><a href="#">Diesel</a></h3>
-				<div></div>
+				<h3><a id="diesel" href="#">Diesel</a></h3>
+				<div><ul>
+					<li id="transactions"><a href="#">Transactions</a></li>
+					<li id="purchase"><a href="#">Purchase</a></li>
+					<li id="payment"><a href="#">Payment</a></li>
+					<li id="consumption"><a href="#">Consumption</a></li>
+				</ul></div>
 				<h3><a href="#">Inventory</a></h3>
 				<div></div>
 				<h3><a href="#">HRM</a></h3>
