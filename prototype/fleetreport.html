@@ -1,0 +1,66 @@
+<link rel="stylesheet" type="text/css" href="css/pgpl1.css">
+<script>
+	$(function() {
+		$("button, input:submit, a", ".demo").button();
+		$("button, input:submit, a", ".demo").click(function() {
+			$("div#maincontents").load("productionreport.html");
+			return false;
+		});
+	});
+	$(function() {
+		$("#fromdatepicker").datepicker();
+		$("#todatepicker").datepicker();
+	});
+</script>
+<div id="reports">
+<div id="reportheading">
+<h3>Inventory Report</h3>
+</div>
+<table id="tbreport">
+	
+	<tr>
+		<td><b>Vehicle Category: </b></td>
+		<td><select style="width: 160px;">
+			<option value="cash">Option 1</option>
+			<option value="cheque">Option 2</option>
+		</select></td>
+		<td><b>&nbsp;</b></td>
+		<td><b>&nbsp;</b></td>
+		<td><b>&nbsp;</b></td>
+		</tr>
+		<tr>
+		<td><b>Vehicle Number</b></td>
+		<td><select style="width: 160px;">
+			<option value="cash">Option 1</option>
+			<option value="cheque">Option 2</option>
+		</select></td>
+		<td><b>&nbsp;</b></td>
+		<td><b>&nbsp;</b></td>
+		<td><b>&nbsp;</b></td>
+	</tr>
+	<tr>
+		<td><b>&nbsp;</b></td>
+		<td><b>&nbsp;</b></td>
+		<td><b>&nbsp;</b></td>
+		<td><b>&nbsp;</b></td>
+		<td><b>&nbsp;</b></td>
+	</tr>
+	<tr>
+		<td><b>Date : </b></td>
+		<td colspan="2"><b>From</b></td>
+		<td colspan="2"><b>To</b></td>
+	</tr>
+	<tr>
+		<td><b>&nbsp;</b></td>
+		<td colspan="2"><b><input type="text" id="fromdatepicker"></b></td>
+		<td colspan="2"><b><input type="text" id="todatepicker"></b></td>
+	</tr>
+	</table>
+<br>
+</div>
+<div id="bottomrow" style="clear: both; padding-left: 300px;">
+<div class="demo">
+
+<button>Generate</button>
+</div>
+</div>

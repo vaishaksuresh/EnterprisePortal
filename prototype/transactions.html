@@ -1,3 +1,10 @@
+<script>
+$(function() {
+	$("#tblisting tr td#due").click(function() {
+		$("#sidebar ul li#payment").click();
+	});
+});
+</script>
 <table id="tblisting" width="100%">
 	<tr id="header">
 		<th>#</th>
@@ -14,26 +21,26 @@
 	</tr>
 	<tr id="oddrow">
 		<td>1</td>
-		<td>MLL21</td>
-		<td>02-JAN-2011</td>
+		<td>02-10-2010</td>
 		<td>61017</td>
 		<td>2000</td>
 		<td>69300</td>
-		<td>08-JAN-2011</td>
+		<td>08-01-2010</td>
 		<td>768438</td>
+		<td>69300</td>
 		<td>0</td>
 		<td>Clear</td>
 	</tr>
 	<tr id="evenrow">
-		<td>1</td>
-		<td>MLL21</td>
-		<td>02-JAN-2011</td>
-		<td>61017</td>
+		<td>2</td>
+		<td>02-10-2010</td>
+		<td>61018</td>
 		<td>2000</td>
 		<td>69300</td>
-		<td>08-JAN-2011</td>
+		<td>08-01-2010</td>
 		<td>768438</td>
+		<td>69300</td>
 		<td>0</td>
-		<td>Clear</td>
+		<td id="due"><a href="#">Due</a></td>
 	</tr>
 </table>

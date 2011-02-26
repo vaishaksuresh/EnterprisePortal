@@ -1,0 +1,88 @@
+<script>
+	$(function() {
+		$("#datepicker").datepicker();
+		$("#dojpicker").datepicker();
+	});
+	$(function() {
+		$("button, input:submit, a", ".demo").button();
+		$("button, input:submit, a", ".demo").click(function() {
+			$("#sidebar ul li#hremployees").click();
+			return false;
+		});
+	});
+</script>
+<div id="datefield" style="float: right;">
+<p>Date: <input type="text" id="datepicker"></p>
+</div>
+<div id="production" style="clear: both;" align="center">
+<table id="tbproduction" width="100%">
+	<tr>
+		<td><b>Date of Joining</b></td>
+		<td><input type="text" id="dojpicker"></td>
+	</tr>
+	<tr>
+		<td><b>Location</b></td>
+		<td><select style="width: 160px;">
+			<option value="Category">Halaganji</option>
+			<option value="Alagangi">Masagapura</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td><b>Employee Name</b></td>
+		<td><input style="width: 160px;" type="text" id="pitid"></td>
+	</tr>
+	<tr>
+		<td><b>Date of Birth</b></td>
+		<td><input style="width: 160px;" type="text" id="pitid"></td>
+	</tr>
+	<tr>
+		<td><b>Father's / Mother's Name</b></td>
+		<td><input style="width: 160px;" type="text" id="pitid"></td>
+	</tr>
+	<tr>
+		<td><b>Designation</b></td>
+		<td><input style="width: 160px;" type="text" id="pitid"></td>
+	</tr>
+	<tr>
+		<td><b>Permanent Address</b></td>
+		<td><textarea rows="4" style="width: 400px;"></textarea></td>
+	</tr>
+	<tr>
+		<td><b>Contact Number</b></td>
+		<td><input style="width: 160px;" type="text" id="pitid"></td>
+	</tr>
+	<tr>
+		<td><b>Contact Number (Emergency)</b></td>
+		<td><input style="width: 160px;" type="text" id="pitid"></td>
+	</tr>
+	<tr>
+		<td><b>Previous Employer</b></td>
+		<td><input style="width: 160px;" type="text" id="pitid"></td>
+	</tr>
+	<tr>
+		<td><b>Skill Set</b></td>
+		<td>1 <input style="width: 160px;" type="text" id="pitid">
+		Experience (Yrs)<input style="width: 160px;" type="text" id="pitid"><br>
+		2 <input style="width: 160px;" type="text" id="pitid">
+		Experience (Yrs)<input style="width: 160px;" type="text" id="pitid"><br>
+		3 <input style="width: 160px;" type="text" id="pitid">
+		Experience (Yrs)<input style="width: 160px;" type="text" id="pitid"></td>
+	</tr>
+	<tr>
+		<td><b>Referral</b></td>
+		<td><input style="width: 160px;" type="text" id="pitid"></td>
+	</tr>
+	<tr>
+		<td><b>Remarks</b></td>
+		<td><textarea rows="4" style="width: 400px;"></textarea></td>
+	</tr>
+</table>
+</div>
+<div id="bottomrow"
+	style="clear: both; float: right; padding-right: 30px;">
+<div class="demo">
+
+<button>Submit</button>
+
+</div>
+</div>

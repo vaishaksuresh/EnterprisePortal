@@ -5,7 +5,7 @@
 	$(function() {
 		$("button, input:submit, a", ".demo").button();
 		$("button, input:submit, a", ".demo").click(function() {
-			$("#sidebar ul li#transactions").click();
+			$("#sidebar ul li#inventory").click();
 			return false;
 		});
 	});
@@ -16,20 +16,30 @@
 <div id="production" style="clear: both;" align="center">
 <table id="tbproduction" width="100%">
 	<tr>
-		<td><b>Bill No</b></td>
-		<td><input style="width:160px;" type="text" id="billno"></td>
+		<td><b>Inventory Category</b></td>
+		<td><select style="width: 160px;">
+			<option value="cash">Option 1</option>
+			<option value="cheque">Option 2</option>
+		</select></td>
 	</tr>
 	<tr>
-		<td><b>Quantity</b></td>
-		<td><input style="width:160px;" type="text" id="quantity"></td>
+		<td><b>Item</b></td>
+		<td><select style="width: 160px;">
+			<option value="cash">Option 1</option>
+			<option value="cheque">Option 2</option>
+		</select></td>
 	</tr>
 	<tr>
-		<td><b>Price per Litre</b></td>
-		<td><input style="width:160px;" type="text" id="priceperlitre">				<a href="#">Edit</a></td>
+		<td><b>Part no</b></td>
+		<td><input style="width: 160px;" size="2" type="text"></td>
 	</tr>
 	<tr>
-		<td><b>Amount</b></td>
-		<td><input style="width:160px;" type="text" id="amount"></td>
+		<td><b>Stock</b></td>
+		<td>8</td>
+	</tr>
+	<tr>
+		<td><b>Person</b></td>
+		<td><input style="width: 160px;" size="2" type="text"></td>
 	</tr>
 	<tr>
 		<td><b>Remarks</b></td>

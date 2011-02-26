@@ -1,0 +1,71 @@
+<script>
+$(function() {
+	$("#tblisting tr th#use").click(function() {
+		$("#sidebar ul li#consumption").click();
+	});
+});
+</script>
+<table width="100%">
+	<tr>
+		<td>Part No
+		<input type="text"></td>
+		<td>Inventory Category</td>
+		<td><select>
+			<option>Oil</option>
+			<option>Lubricants</option>
+			<option>Excavators</option>
+			<option>ELGI</option>
+			<option>Dumpers</option>
+			<option>Generators</option>
+			<option>Wire Saw Machine</option>
+		</select></td>
+		<td>Item</td>
+		<td><select>
+			<option>Item 1</option>
+			<option>Item 2</option>
+			<option>Item 3</option>
+		</select></td>
+	</tr>
+</table>
+<table id="tblisting" width="100%">
+	<tr id="header">
+		<th>#</th>
+		<th>Date</th>
+		<th>Item</th>
+		<th>Number</th>
+		<th>Quantity</th>
+		<th>Status</th>
+	</tr>
+	<tr id="oddrow">
+		<td>1</td>
+		<td>02-10-2010</td>
+		<td>PRT001</td>
+		<td>2</td>
+		<td>5</td>
+		<td>Purchased</td>
+	</tr>
+	<tr id="evenrow">
+		<td>2</td>
+		<td>02-10-2010</td>
+		<td>PRT001</td>
+		<td>2</td>
+		<td>6</td>
+		<td>Purchased</td>
+	</tr>
+	<tr id="oddrow">
+		<td>3</td>
+		<td>01-01-2011</td>
+		<td>PRT001</td>
+		<td>2</td>
+		<td>3</td>
+		<td>Used</td>
+	</tr>
+	<tr id="header">
+		<th>Total</th>
+		<th></th>
+		<th>PRT001</th>
+		<th></th>
+		<th>8</th>
+		<th id="use"><a href="#">Use</a></th>
+	</tr>
+</table>

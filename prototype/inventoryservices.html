@@ -1,0 +1,64 @@
+<script>
+$(function() {
+	$("#tblisting tr th#use").click(function() {
+		$("#sidebar ul li#consumption").click();
+	});
+});
+</script>
+<table width="100%">
+	<tr>
+		<td>Machine Category</td>
+		<td><select>
+			<option>Excavators</option>
+			<option>ELGI</option>
+			<option>Dumpers</option>
+			<option>Generators</option>
+			<option>Wire Saw Machine</option>
+		</select></td>
+		<td>Machien/Vehicle</td>
+		<td><select>
+			<option>EX 350 LCHV - Sl No. 0263</option>
+			<option>EX 300 LCH Sl no. - 0775</option>
+			<option>EX 300 LCH Sl no. - 0780</option>
+			<option>EX 300 LCH Sl no. - 0781</option>
+		</select></td>
+	</tr>
+</table>
+<table id="tblisting" width="100%">
+	<tr id="header">
+		<th>#</th>
+		<th>Machine</th>
+		<th>Service Date</th>
+		<th>Service Renderer</th>
+		<th>Service Engineer</th>
+		<th>Service Category</th>
+		<th>Status</th>
+	</tr>
+	<tr id="oddrow">
+		<td>1</td>
+		<td>EX 350 LCHV - Sl No. 0263</td>
+		<td>02-01-2011</td>
+		<td>Telcon</td>
+		<td>Ramakrishna</td>
+		<td>Annual</td>
+		<td>Clear</td>
+	</tr>
+	<tr id="evenrow">
+		<td>1</td>
+		<td>EX 350 LCHV - Sl No. 0263</td>
+		<td>02-01-2011</td>
+		<td>Telcon</td>
+		<td>Ramakrishna</td>
+		<td>Annual</td>
+		<td>Clear</td>
+	</tr>
+	<tr id="header">
+		<th></th>
+		<th>Next Service</th>
+		<th>Date</th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th id="use"><a href="#">Use</a></th>
+	</tr>
+</table>

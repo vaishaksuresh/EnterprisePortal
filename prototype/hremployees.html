@@ -1,0 +1,53 @@
+<script>
+	$(function() {
+		$("#tblisting tr td#sell").click(function() {
+			$("#sidebar ul li#sales").click();
+		});
+	});
+</script>
+<table id="tblisting" width="100%">
+	<tr id="header">
+		<th>#</th>
+		<th>EMP ID</th>
+		<th>Employee Name</th>
+		<th>Designation</th>
+		<th>Date of Joining</th>
+		<th>Status</th>
+		<th>Work Place</th>
+		<th>Experience</th>
+		<th>Edit / Details</th>
+	</tr>
+	<tr id="oddrow">
+		<td>1</td>
+		<td>HL01</td>
+		<td>Rajanikanth</td>
+		<td>Manager</td>
+		<td>15-April-2010</td>
+		<td>Available</td>
+		<td>Halaganji</td>
+		<td>8 Months</td>
+		<td><a id="edit" href="#">Edit</a>/<a id="details" href="#">Details</a></td>
+	</tr>
+	<tr id="evenrow">
+		<td>2</td>
+		<td>MA01</td>
+		<td>Shahrukh Khan</td>
+		<td>Unskilled</td>
+		<td>15-April-2010</td>
+		<td>Left</td>
+		<td>Masagapura</td>
+		<td>1 Year</td>
+		<td><a id="edit" href="#">Edit</a>/<a id="details" href="#">Details</a></td>
+	</tr>
+	<tr id="oddrow">
+		<td>3</td>
+		<td>HL02</td>
+		<td>Jaggesh</td>
+		<td>Driver</td>
+		<td>15-April-2010</td>
+		<td>Available</td>
+		<td>Halaganji</td>
+		<td>8 Months</td>
+		<td><a id="edit" href="#">Edit</a>/<a id="details" href="#">Details</a></td>
+	</tr>
+</table>
