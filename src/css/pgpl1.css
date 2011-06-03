@@ -1,0 +1,280 @@
+body,html {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #ffffff;
+	height: 100%;
+}
+
+#wrap {
+	width: 1000px;
+	margin: 0 auto;
+	background: #ffffff;
+}
+
+#header {
+	padding-top: 0px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 15px;
+	height: 35px;
+	font: normal normal normal 20.34px/normal Verdana, helvetica, arial, freesans,
+		clean, sans-serif;
+	vertical-align: middle;
+}
+
+#header p {
+	margin-top: 0px;
+}
+
+h1 {
+	margin: 0;
+}
+
+#nav {
+	padding-top: 5px;
+	padding-bottom: 0px;
+}
+
+#nav #username {
+	background: #31859C;
+	color: #ffffff;
+	text-align: center;
+}
+
+#nav #breadcrumb {
+	background: #A9D0F5;
+	color: #0174DF;
+	text-indent: 10px;
+	text-decoration: none;
+}
+
+#nav #breadcrumb a {
+	color: #0174DF;
+	text-decoration: none;
+}
+
+#nav #breadcrumb a:HOVER {
+	color: #0174DF;
+	text-decoration: underline;
+}
+
+#main {
+	float: right;
+	width: 82.8%;
+	padding-left: 2px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+h2 {
+	margin: 0 0 1em;
+}
+h3 {
+	margin: 0 0 1em;
+}
+
+#sidebar {
+	float: left;
+	width: 16.5%;
+	background: #6D7B8D;
+	padding-top: 35px;
+	padding-right: 2px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	height: 600px;
+}
+
+#footer {
+	clear: both;
+	padding: 5px 10px;
+	background: #31859c;
+}
+
+#footer p {
+	margin: 0;
+}
+
+Accordion #sidebar li a {
+	background: #222;
+	padding: 0.5em;
+	display: block;
+	color: #ececec;
+	font-weight: bold;
+	font: 0.2em Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+ul>li {
+	list-style: disc;
+	color:red;
+	padding: 0;
+	margin: 0;
+}
+
+ul>li>a {
+	text-decoration: none;
+	font: 0.8em Verdana, Arial, Helvetica, sans-serif;
+}
+
+ul>li>a:hover {
+	font-style: italic;
+}
+
+#sidebar li ul {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li ul li {
+	padding: 2px;
+	margin: 0;
+	border-bottom: 1px dashed #ccc;
+	font: 0.8em Verdana, Arial, Helvetica, sans-serif;
+}
+
+#sidebar li ul li a {
+	padding: 5px 0;
+	font: 0.8em Verdana, Arial, Helvetica, sans-serif;
+	color: #222;
+	background: none;
+	text-decoration: none;
+}
+
+#sidebar li ul li a:hover {
+	color: #C90;
+}
+
+#main #tblisting {
+	border: none;
+	padding-top: 15px;
+}
+
+#main #header {
+	height: "20px";
+}
+
+#main table th {
+	background: #4863A0;
+	color: #ffffff;
+	height: 20px;
+	font: 0.6em Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#main table #oddrow {
+	background: #CEE3F6;
+	color: #000000;
+	height: 30px;
+	font: 0.8em Verdana, Arial, Helvetica, sans-serif;
+}
+
+#main table #evenrow {
+	background: #EFF5FB;
+	color: #000000;
+	height: 30px;
+	font: 0.8em Verdana, Arial, Helvetica, sans-serif;
+}
+
+#main #tblisting tr td {
+	text-align: center;
+}
+
+#main #production {
+	padding-left: 80px;
+	padding-right: 20px;
+}
+#main #sales {
+	padding-left: 80px;
+	padding-right: 20px;
+}
+#main #reports {
+	padding-left: 80px;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+#main #datefield {
+	padding-right: 20px;
+}
+
+#tbproduction tr td {
+	text-align: left;
+	padding: 10px;
+}
+#tbsales tr td {
+	text-align: left;
+	padding: 10px;
+}
+#tbsales1 tr td {
+	text-align: left;
+	padding: 10px;
+}
+
+#productionreport {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+}
+#salesreport {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+}
+
+#tbproductionreport {
+	width: 100%;
+	height: 100%;
+}
+#main #tbreport {
+	width: 80%;
+	height: 100%;
+}
+#main #tbreport tr td {
+	text-align:justify;
+	height: 25px;
+	padding: 2px;
+}
+#tbproductionreport tr td {
+	text-align: left;
+	padding: 10px;
+	border: thin;
+}
+
+#main #mainheading {
+	background: #376092;
+	height: 30px;
+	color: #ffffff;
+	text-indent: 10px;
+	width: auto;
+}
+
+#companyname {
+	clear: right;
+	padding-left: 5px;
+	padding-bottom: 10px;
+}
+
+#topline {
+	width: 100%;
+	height: 5px;
+	background-color: #31859c;
+}
+
+#logout {
+	float: right;
+	background-color: #31859C;
+	font-size: 13px;
+	color: #ffffff;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.leftgradient {
+	background-image: url('../images/background.jpg');
+	background-position: right;
+}
+
+.rightgradient {
+	background-image: url('../images/backgroundflipped.jpg');
+	background-position: left;
+}
