@@ -269,3 +269,12 @@ ul>li>a:hover {
 	padding-left: 5px;
 	padding-right: 5px;
 }
+.leftgradient {
+	background-image: url('images/background.jpg');
+	background-position: right;
+}
+
+.rightgradient {
+	background-image: url('images/backgroundflipped.jpg');
+	background-position: left;
+}

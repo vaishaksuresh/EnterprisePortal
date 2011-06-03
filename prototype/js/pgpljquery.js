@@ -118,6 +118,11 @@ $(document).ready(
 						$("#sidebar ul li#hrreports").css("text-decoration",
 								"underline");
 					});
+			$("#sidebar ul li#analyticsanalytics").click(
+					function() {
+						$("#sidebar ul li#analyticsanalytics").css("text-decoration",
+								"underline");
+					});
 		});
 $(function() {
 	$("#sidebar ul li#stock").click(function() {
@@ -267,6 +272,13 @@ $(function() {
 	});
 });
 $(function() {
+	$("#sidebar ul li#analyticsanalytics").click(function() {
+		$("div#maincontents").load("analytics.html");
+		$("div#mainheading h3").text("Analytics");
+		$("div#nav tr td#breadcrumb").text("ANALYTICS > Analytics");
+	});
+});
+$(function() {
 	$("#datepicker").datepicker();
 });
 $(function() {
@@ -292,5 +304,10 @@ $(function() {
 $(function() {
 	$("#sidebar h3 a#hr").click(function() {
 		$("#sidebar ul li#hremployees").click();
+	});
+});
+$(function() {
+	$("#sidebar h3 a#analytics").click(function() {
+		$("#sidebar ul li#analyticsanalytics").click();
 	});
 });

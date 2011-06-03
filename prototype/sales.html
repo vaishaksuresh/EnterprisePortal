@@ -5,7 +5,7 @@
 	$(function() {
 		$("button, input:submit, a", ".demo").button();
 		$("button, input:submit, a", ".demo").click(function() {
-			$("div#maincontents").load("production.html");
+			$("#sidebar ul li#stock").click();
 			return false;
 		});
 	});

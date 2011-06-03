@@ -14,13 +14,23 @@
 	});
 	$(function() {
 		$("button, input:submit, a", ".demo").button();
-		$("button, input:submit, a", ".demo").click(function() {
-			if ($("#user").val() == 'vaishak') {
-				window.location.href = 'main.html';
-			}
+		$("button, input:submit, a", ".demo").click(
+				function() {
+					if ($("#user").val() == '' || $("#password").val() == '') {
+						alert('Username or Password cannot be blank!');
+						return false;
+					}
 
-			return false;
-		});
+					if ($("#user").val() == 'user'
+							&& $("#password").val() == 'password') {
+						window.location.href = 'main.html';
+
+					} else {
+						alert('Invalid username or password');
+						return false;
+					}
+
+				});
 	});
 </script>
 <style type="text/css">
@@ -47,7 +57,7 @@
 		<div id="topline"></div>
 		<div id="logout"><u>Logout</u></div>
 		<div style="float: left; width: 100%">
-		<div style="float: left;"><img src="images/logo.jpg"
+		<div style="float: left;"><img src="images/Logo.jpg"
 			width="150px" height="80px" align="left"></div>
 		<div style="float: left; padding-top: 35px;"><b>Phaneesh
 		Granite Private Limited</b></div>

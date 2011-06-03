@@ -2,10 +2,16 @@
 <script>
 	$(function() {
 		$("button, input:submit, a", ".demo").button();
-		$("button, input:submit, a", ".demo").click(function() {
-			$("div#maincontents").load("productionreport.html");
-			return false;
-		});
+		$("button, input:submit, a", ".demo")
+				.click(
+						function() {
+							window
+									.open(
+											'pppreportpopup.html',
+											'popUpWindow',
+											'left=100,top=100,resizable=no,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=no');
+							return false;
+						});
 	});
 	$(function() {
 		$("#fromdatepicker").datepicker();
@@ -26,7 +32,8 @@
 	</tr>
 	<tr>
 		<td><b>&nbsp;</b></td>
-		<td><input type="radio" name="group1" value="all" checked="checked"></td>
+		<td><input type="radio" name="group1" value="all"
+			checked="checked"></td>
 		<td><input type="radio" name="group1" value="vat"></td>
 		<td><input type="radio" name="group1" value="cst"></td>
 		<td><input type="radio" name="group1" value="royalty"></td>
