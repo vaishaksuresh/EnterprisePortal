@@ -1,3 +1,4 @@
+<?php include 'accesscontrol.php'?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,18 +10,6 @@
 <script src="jquery/jquery-ui.min.js"></script>
 <script src="js/pgpljquery.js"></script>
 
-
-<style type="text/css">
-.leftgradient {
-	background-image: url('images/background.jpg');
-	background-position: right;
-}
-
-.rightgradient {
-	background-image: url('images/backgroundflipped.jpg');
-	background-position: left;
-}
-</style>
 
 <title>PHANEESH GRANITE Private Limited</title>
 </head>
@@ -44,7 +33,7 @@
 		<div id="nav">
 		<table width="100%" height="40px">
 			<tr>
-				<td width="17%" id="username">Welcome Vaishak</td>
+				<td width="17%" id="username">Welcome |<?php echo $_SESSION['user']?>|</td>
 				<td width="83%" id="breadcrumb">Home</td>
 			</tr>
 		</table>

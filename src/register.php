@@ -116,7 +116,7 @@ if (!$result) {
 if (@mysql_result($result,0,0)>0) {
 	error('A user already exists with your chosen userid.\\n'. 'Please try another.');
 }
-$newpass = md5($newpassword);
+$newpass = md5($_POST['newpassword']);
 $sql = "INSERT INTO user SET userid = '$_POST[newid]', password = '$newpass', fullname = '$_POST[newname]', email = '$_POST[newemail]'";
 if (!mysql_query($sql))
 error('A database error occurred in processing your '. 'submission.\\nIf this error persists, please '. 'contact you@example.com.');
@@ -128,4 +128,4 @@ in, click <a href="index.php">here</a> to return to the login page, and
 enter your new personal userid and password.</p>
 </body>
 </html>
-<?php endif; ?>
+<?php echo $_POST['newpassword'],$newpass; endif; ?>
