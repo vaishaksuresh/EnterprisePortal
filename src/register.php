@@ -107,7 +107,7 @@ if ($_POST['newid']=='' or $_POST['newname']=='' or $_POST['newemail']=='') {
 	error('One or more required fields were left blank.\\n'. 'Please fill them in and try again.');
 }
 // Check for existing user with the new id
-dbConnect("ppgl");
+dbConnect("pgpl");
 $sql = "SELECT COUNT(*) FROM user WHERE userid = '$_POST[newid]'";
 $result = mysql_query($sql);
 if (!$result) {

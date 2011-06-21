@@ -224,7 +224,7 @@ $(function() {
 });
 $(function() {
 	$("#sidebar ul li#fleetfleet").click(function() {
-		$("div#maincontents").load("fleetfleet.html");
+		$("div#maincontents").load("fleetfleet.php");
 		$("div#mainheading h3").text("FLEET");
 		$("div#nav tr td#breadcrumb").text("Fleet > Fleet");
 	});
