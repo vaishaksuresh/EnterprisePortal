@@ -78,6 +78,11 @@ $(document).ready(
 						$("#sidebar ul li#inventoryreport").css(
 								"text-decoration", "underline");
 					});
+			$("#sidebar ul li#fleetmain").click(
+					function() {
+						$("#sidebar ul li#fleetmain").css("text-decoration",
+								"underline");
+					});
 			$("#sidebar ul li#fleetfleet").click(
 					function() {
 						$("#sidebar ul li#fleetfleet").css("text-decoration",
@@ -223,6 +228,13 @@ $(function() {
 	});
 });
 $(function() {
+	$("#sidebar ul li#fleetmain").click(function() {
+		$("div#maincontents").load("fleetmain.php");
+		$("div#mainheading h3").text("FLEET");
+		$("div#nav tr td#breadcrumb").text("Fleet > Main");
+	});
+});
+$(function() {
 	$("#sidebar ul li#fleetfleet").click(function() {
 		$("div#maincontents").load("fleetfleet.php");
 		$("div#mainheading h3").text("FLEET");
@@ -231,7 +243,7 @@ $(function() {
 });
 $(function() {
 	$("#sidebar ul li#fleetrunning").click(function() {
-		$("div#maincontents").load("fleetrunning.html");
+		$("div#maincontents").load("fleetrunning.php");
 		$("div#mainheading h3").text("FLEET");
 		$("div#nav tr td#breadcrumb").text("Fleet > Running");
 	});
@@ -298,7 +310,7 @@ $(function() {
 });
 $(function() {
 	$("#sidebar h3 a#fleet").click(function() {
-		$("#sidebar ul li#fleetfleet").click();
+		$("#sidebar ul li#fleetmain").click();
 	});
 });
 $(function() {
@@ -309,5 +321,41 @@ $(function() {
 $(function() {
 	$("#sidebar h3 a#analytics").click(function() {
 		$("#sidebar ul li#analyticsanalytics").click();
+	});
+});
+$(function() {
+	$("a#fleetExcavator").click(function() {
+		
+		$("div#maincontents").load("fleetsearch.php");
+	});
+});
+$(function() {
+	$("a#fleetDumpers").click(function() {
+		
+		$("div#maincontents").load("fleetsearch.php");
+	});
+});
+$(function() {
+	$("a#fleetCompressors").click(function() {
+		
+		$("div#maincontents").load("fleetsearch.php");
+	});
+});
+$(function() {
+	$("a#fleetGenerators").click(function() {
+		
+		$("div#maincontents").load("fleetsearch.php");
+	});
+});
+$(function() {
+	$("a#fleetVehicles").click(function() {
+		
+		$("div#maincontents").load("fleetsearch.php");
+	});
+});
+$(function() {
+	$("a#fleetWiresaw").click(function() {
+		
+		$("div#maincontents").load("fleetsearch.php");
 	});
 });

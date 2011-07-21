@@ -5,7 +5,7 @@ if(!isset($_SESSION['user'])){
 		$username = $_POST['user'];
 		$password = $_POST['password'];
 
-		dbConnect("pgpl");
+		dbConnect("vaishaks_pgpl");
 		$sql = "SELECT * FROM user WHERE userid = '$username'";
 		$result = mysql_query($sql);
 		if (!$result) {

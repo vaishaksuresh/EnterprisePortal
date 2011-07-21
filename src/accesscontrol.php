@@ -83,6 +83,9 @@ if(!isset($uid)) { ?>
 		</table>
 
 		</div>
+		
+		</div>
+		</form>
 		<div id="bottomrow"
 			style="clear: both; float: right; padding-right: 300px; padding-bottom: 20px;">
 		<div class="demo">
@@ -91,9 +94,7 @@ if(!isset($uid)) { ?>
 		<button id="signup">Register</button>
 		</div>
 		</div>
-
-		</div>
-		</form>
+		
 		<div id="footer"></div>
 		</td>
 		<td class="rightgradient" width="10%">&nbsp;</td>

@@ -1,13 +1,6 @@
 <?php include 'accesscontrol.php'?>
-<script>
-	$(function() {
-		$("#tblisting tr td#sell").click(function() {
-			$("#sidebar ul li#sales").click();
-		});
-	});
-</script>
 <?php
-dbConnect("pgpl");
+dbConnect("vaishaks_pgpl");
 $sql = "SELECT * FROM fleet";
 $result = mysql_query($sql);
 if (!$result) {

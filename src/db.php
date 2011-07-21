@@ -1,8 +1,8 @@
 <?php
 //db.php
 $dbhost = "localhost";
-$dbuser = "ppgladmin";
-$dbpass = "password";
+$dbuser = "vaishaks_pgpladm";
+$dbpass = "pgplpass";
 function dbConnect($db="") {
 	global $dbhost, $dbuser, $dbpass; $dbcnx = @mysql_connect($dbhost, $dbuser, $dbpass)
 	or die("The site database appears to be down.");
