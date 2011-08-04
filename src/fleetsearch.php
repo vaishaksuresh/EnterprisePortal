@@ -19,9 +19,13 @@
 	<tr>
 		<td><b>Category</b></td>
 		<td><select style="width:160px;">
-			<option value="Category">Select</option>
-			<option value="Alagangi">Category 2</option>
-		</select>&nbsp;<a href="#">Add New</a></td>
+			<option value="Excavators"<?php if ($_POST['fleetvehicle']=='Excavators'):?>selected="selected"<?php endif;?>>Excavator</option>
+			<option value="Dumpers"<?php if ($_POST['fleetvehicle']=='Dumpers'):?>selected="selected"<?php endif;?>>Dumper</option>
+			<option value="Compressors"<?php if ($_POST['fleetvehicle']=='Compressors'):?>selected="selected"<?php endif;?>>Compressors</option>
+			<option value="Generators"<?php if ($_POST['fleetvehicle']=='Generators'):?>selected="selected"<?php endif;?>>Generators</option>
+			<option value="Vehicles"<?php if ($_POST['fleetvehicle']=='Vehicles'):?>selected="selected"<?php endif;?>>Other Vehicles</option>
+			<option value="WireSaws"<?php if ($_POST['fleetvehicle']=='WireSaws'):?>selected="selected"<?php endif;?>>Wire Saw</option>
+		</select>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add New</a></td>
 	</tr>
 	<tr>
 		<td><b>Serial Number</b></td>
