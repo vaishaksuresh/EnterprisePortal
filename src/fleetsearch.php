@@ -106,8 +106,10 @@ while ($row = mysql_fetch_array($result)){
 ?>
 	<tr>
 		<td><b>Date of Purchase</b> : <?php echo $dop;?></td>
-		<td rowspan="6" ><center><img src="<?php echo $imagepath;?>" height="150px" width="150px" />
-		</center></td>
+		<td rowspan="6">
+		<center><img src="<?php echo $imagepath;?>" height="150px"
+			width="150px" /></center>
+		</td>
 	</tr>
 	<tr>
 		<td><b>Make</b> : <?php echo $make;?></td>
@@ -126,4 +128,115 @@ while ($row = mysql_fetch_array($result)){
 	</tr>
 </table>
 <hr>
-<?php }?></div>
+</div>
+
+<div id="production" style="clear: both;" align="center">
+<h3 align="left">RC Details</h3>
+<table id="tbproduction" width="100%">
+	<tr>
+		<th>File Path</th>
+		<th>Date of Upload</th>
+		<th>Description</th>
+	</tr>
+	<?php
+	dbConnect("vaishaks_pgpl");
+	$sql = "select * from vehicle_rc_details where serialnumber='$serial'";
+	$result = mysql_query($sql);
+	if (!$result) {
+		error('A database error occurred in processing your '.
+	'submission.\\nIf this error persists, please '. 
+	'contact you@example.com.');
+	}
+	while ($row = mysql_fetch_array($result)){
+		?>
+	<tr>
+		<td><a href="<?php echo $row[3];?>" target="_blank">PDF</a></td>
+		<td><?php echo $row[1];?></td>
+		<td><?php echo $row[2];?></td>
+	</tr>
+	<?php }
+	?>
+</table>
+<hr>
+</div>
+<div id="production" style="clear: both;" align="center">
+<h3 align="left">Loan Details</h3>
+<table id="tbproduction" width="100%">
+<?php
+dbConnect("vaishaks_pgpl");
+$sql = "select * from loan_details where serialnumber='$serial'";
+$result = mysql_query($sql);
+if (!$result) {
+	error('A database error occurred in processing your '.
+	'submission.\\nIf this error persists, please '. 
+	'contact you@example.com.');
+}
+while ($row = mysql_fetch_array($result)){
+	$loanamt = $row[1];
+	$bank = $row[2];
+	$emi = $row[3];
+	$amtpaid = $row[4];
+	$intpaid = $row[5];
+	$totalpaid = $row[6];
+}
+?>
+	<tr>
+		<td><b>Loan Amount</b> : <?php echo $loanamt;?></td>
+	</tr>
+	<tr>
+		<td><b>Bank Address</b> : <?php echo $bank;?></td>
+	</tr>
+	<tr>
+		<td><b>EMI Paid</b> : <?php echo $emi;?></td>
+	</tr>
+	<tr>
+		<td><b>Amount Paid</b> : <?php echo $amtpaid;?></td>
+	</tr>
+	<tr>
+		<td><b>Interest Paid</b> : <?php echo $intpaid;?></td>
+	</tr>
+	<tr>
+		<td><b>Total Amount Paid</b> : <?php echo $totalpaid;?></td>
+	</tr>
+</table>
+<hr>
+</div>
+<div id="production" style="clear: both;" align="center">
+<h3 align="left">Insurance Details</h3>
+<table id="tbproduction" width="100%">
+<?php
+dbConnect("vaishaks_pgpl");
+$sql = "select * from insurance_details where serialnumber='$serial'";
+$result = mysql_query($sql);
+if (!$result) {
+	error('A database error occurred in processing your '.
+	'submission.\\nIf this error persists, please '. 
+	'contact you@example.com.');
+}
+while ($row = mysql_fetch_array($result)){
+	$sumassured = $row[1];
+	$from = $row[2];
+	$to = $row[3];
+	$insureanceaddress = $row[4];
+	$premium = $row[5];
+}
+?>
+	<tr>
+		<td><b>Sum Assured</b> : <?php echo $sumassured;?></td>
+	</tr>
+	<tr>
+		<td><b>From</b> : <?php echo $from;?></td>
+	</tr>
+	<tr>
+		<td><b>To</b> : <?php echo $to;?></td>
+	</tr>
+	<tr>
+		<td><b>Insurance Address</b> : <?php echo $insureanceaddress;?></td>
+	</tr>
+	<tr>
+		<td><b>Premium</b> : <?php echo $premium;?></td>
+	</tr>
+</table>
+<hr>
+</div>
+<?php }?>
