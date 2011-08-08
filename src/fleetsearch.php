@@ -17,6 +17,11 @@
 			}
 		});
 	});
+	$(function() {
+		$("a#fleetaddnew").click(function(){
+			$("div#maincontents").load("fleetaddvehicle.php");
+		});
+	});
 </script>
 <div id="datefield" style="float: right;">
 	<p>&nbsp;</p>
@@ -59,7 +64,7 @@
 					<?php if ($_POST['fleetvehicle']=='WireSaws'):?>
 						selected="selected"  
 						<?php endif;?>>Wire Saw</option>
-			</select>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Add New</a></td>
+			</select>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" id="fleetaddnew">Add New</a></td>
 		</tr>
 		<tr>
 			<td><b>Serial Number</b></td>
@@ -129,7 +134,7 @@
 
 	?>
 		<tr>
-			<td><b>Date of Purchase</b> : <?php echo $dop;?></td>
+			<td style="width: 260px;"><b>Date of Purchase</b> : </td><td><?php echo $dop;?></td>
 			<td rowspan="6">
 				<center>
 					<img src="<?php echo $imagepath;?>" height="150px" width="150px" />
@@ -137,19 +142,19 @@
 			</td>
 		</tr>
 		<tr>
-			<td><b>Make</b> : <?php echo $make;?></td>
+			<td><b>Make</b> : </td><td><?php echo $make;?></td>
 		</tr>
 		<tr>
-			<td><b>Model</b> : <?php echo $model;?></td>
+			<td><b>Model</b> : </td><td><?php echo $model;?></td>
 		</tr>
 		<tr>
-			<td><b>Owner</b> : <?php echo $owner;?></td>
+			<td><b>Owner</b> : </td><td><?php echo $owner;?></td>
 		</tr>
 		<tr>
-			<td><b>Purchase Amount</b> : <?php echo $puramt;?></td>
+			<td><b>Purchase Amount</b> : </td><td><?php echo $puramt;?></td>
 		</tr>
 		<tr>
-			<td><b>Description</b> : <?php echo $desc;?></td>
+			<td><b>Description</b> : </td><td><?php echo $desc;?></td>
 		</tr>
 	</table>
 	<hr>
@@ -212,22 +217,22 @@
 	}
 	?>
 		<tr>
-			<td><b>Loan Amount</b> : <?php echo $loanamt;?></td>
+			<td style="width: 260px;"><b>Loan Amount</b> : </td><td><?php echo $loanamt;?></td>
 		</tr>
 		<tr>
-			<td><b>Bank Address</b> : <?php echo $bank;?></td>
+			<td><b>Bank Address</b> : </td><td><?php echo $bank;?></td>
 		</tr>
 		<tr>
-			<td><b>EMI Paid</b> : <?php echo $emi;?></td>
+			<td><b>EMI Paid</b> : </td><td><?php echo $emi;?></td>
 		</tr>
 		<tr>
-			<td><b>Amount Paid</b> : <?php echo $amtpaid;?></td>
+			<td><b>Amount Paid</b> : </td><td><?php echo $amtpaid;?></td>
 		</tr>
 		<tr>
-			<td><b>Interest Paid</b> : <?php echo $intpaid;?></td>
+			<td><b>Interest Paid</b> : </td><td><?php echo $intpaid;?></td>
 		</tr>
 		<tr>
-			<td><b>Total Amount Paid</b> : <?php echo $totalpaid;?></td>
+			<td><b>Total Amount Paid</b> : </td><td><?php echo $totalpaid;?></td>
 		</tr>
 	</table>
 	
@@ -281,19 +286,19 @@
 	}
 	?>
 		<tr>
-			<td><b>Sum Assured</b> : <?php echo $sumassured;?></td>
+			<td style="width: 260px;"><b>Sum Assured</b> : </td><td><?php echo $sumassured;?></td>
 		</tr>
 		<tr>
-			<td><b>From</b> : <?php echo $from;?></td>
+			<td><b>From</b> : </td><td><?php echo $from;?></td>
 		</tr>
 		<tr>
-			<td><b>To</b> : <?php echo $to;?></td>
+			<td><b>To</b> : </td><td><?php echo $to;?></td>
 		</tr>
 		<tr>
-			<td><b>Insurance Address</b> : <?php echo $insureanceaddress;?></td>
+			<td><b>Insurance Address</b> : </td><td><?php echo $insureanceaddress;?></td>
 		</tr>
 		<tr>
-			<td><b>Premium</b> : <?php echo $premium;?></td>
+			<td><b>Premium</b> : </td><td><?php echo $premium;?></td>
 		</tr>
 	</table>
 	<table id="tbproduction" width="100%">

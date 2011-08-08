@@ -47,7 +47,7 @@ $(function() {
 <table id="tbproduction" width="100%">
 	<tr>
 		<td><center><a id="fleetExcavator" href="#"><img align="middle" height="150px"
-			width="150px" src="./images/Excavator.jpg"></a>
+			width="150px" src="./images/Excavators.jpg"></a>
 			<br><b>Excavators</b></center></td>
 		<td><center><a id="fleetDumpers" href="#"><img height="150px" width="150px"
 			src="./images/Dumpers.jpg"></a><br><b>Dumpers</b></center></td>
