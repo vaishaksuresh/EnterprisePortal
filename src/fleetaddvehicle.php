@@ -185,8 +185,8 @@ $dateTime2=new DateTime($_POST[vehicleTo]);
 $formattedDate1 = date_format($dateTime1, 'Y-m-d');
 $formattedDate2 = date_format($dateTime2, 'Y-m-d');
 
-$sql = "insert into insurance_details set serialnumber='$_POST[fleetserialnumber]',sumassured='$_POST[vehicleSumAssured]',from='$formattedDate1',
-to='$formattedDate2',insuranceaddress='$_POST[vehicleInsuranceAddress]',premium='$_POST[vehiclePremium]'";
+$sql = "insert into insurance_details set serialnumber='$_POST[fleetserialnumber]',sumassured='$_POST[vehicleSumAssured]',fromDate='$formattedDate1',
+toDate='$formattedDate2',insuranceaddress='$_POST[vehicleInsuranceAddress]',premium='$_POST[vehiclePremium]'";
 if (!mysql_query($sql)){
 	echo mysql_error();
 }
